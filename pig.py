@@ -1,6 +1,20 @@
 def pig_latin(sentence):
     # Write your solution here!
-    pass
+    words = sentence.split()
+    new_words_list = []
+    vowel = "a,e,i,o,u"
+
+    for word in words:
+        if word[0] in vowel:
+            new_words_list.append(word)
+        else:
+            new_words = word[1:] + word[0] + "ay"
+            new_words_list.append(new_words)
+
+    return " ".join(new_words_list)
+
+
+
 
 # Test cases
 assert pig_latin("something") == "omethingsay"
