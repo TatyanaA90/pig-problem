@@ -13,7 +13,7 @@ def pig_latin(sentence):
 
     return " ".join(new_words_list)
 
-
+print(pig_latin("Hello"))
 
 
 # Test cases
